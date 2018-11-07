@@ -1,4 +1,4 @@
-FROM postgres:9.2.22
+FROM postgres:9.2.23
 
 ENV DEBIAN_FRONTEND=noninteractive
 
