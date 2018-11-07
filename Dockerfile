@@ -1,8 +1,8 @@
-FROM postgres:latest
+FROM postgres:9.6.5
 
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-  && apt-get install -qy postgresql-11-ip4r \
+  && apt-get install -qy postgresql-9.6-ip4r \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
