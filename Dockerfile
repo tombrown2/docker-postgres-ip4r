@@ -1,8 +1,8 @@
-FROM postgres:latest
+FROM postgres:10.0
 
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
-  && apt-get install -qy postgresql-11-ip4r \
+  && apt-get install -qy postgresql-10-ip4r \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
