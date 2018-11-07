@@ -1,4 +1,4 @@
-FROM postgres:latest
+FROM postgres:11.0
 
 ENV DEBIAN_FRONTEND=noninteractive
 
